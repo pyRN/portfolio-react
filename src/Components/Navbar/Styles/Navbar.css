@@ -1,5 +1,6 @@
 .navbar {
   background-color: var(--white);
+  box-shadow: var(--shadow);
   padding: 0 5%;
   height: 80px;
   position: sticky;
@@ -7,6 +8,17 @@
   z-index: 1;
   justify-content: space-evenly;
   align-items: center;
+  z-index: 2;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.white {
+  background-color: var(--white);
 }
 
 .logo {
@@ -31,7 +43,7 @@
 
 .mobile-nav-link {
   text-decoration: none;
-  color: var(--blue);
+  color: var(--white);
   font-size: 1.3rem;
   opacity: 0;
 }
@@ -90,6 +102,9 @@
 .hamburger-icon,
 .close-icon {
   cursor: pointer;
+  width: 50px;
+  height: 50px;
+  fill: var(--blue);
 }
 
 /*Media queries*/
@@ -120,11 +135,12 @@
 
   .open .mobile-menu {
     display: flex;
-    background-color: var(--white);
-    border: 2px solid var(--blue);
+    background-color: var(--blue);
+    border: 2px solid var(--white);
     z-index: 2;
     position: fixed;
-    top: 80px;
+    height: 500px;
+    top: 50px;
     left: 0px;
     right: 0px;
     margin: 1.5rem 1rem;
@@ -156,6 +172,5 @@
     font-size: 1.3rem;
     text-transform: uppercase;
     transition: color 0.1s, background-color 0.1s;
-    color: var(--blue);
   }
 }
