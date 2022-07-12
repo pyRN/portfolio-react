@@ -1,8 +1,10 @@
 import { useState } from "react";
 import oInfo from "../info.json";
-//Multimedia
+//Images
 import AboutImage from "./Images/AboutImage.jpg";
-import Resume from "../../Multimedia/Documents/Jacob_Mayeux_Resume_6_2022.pdf";
+
+//Documents
+import Resume from "../Documents/Jacob_Mayeux_Resume_6_2022.pdf";
 
 const AboutContainer = () => {
   const { sGreeting, sTitle, sContext, sMoreContext, sButtonText } =
@@ -10,41 +12,39 @@ const AboutContainer = () => {
   const [bShowMore, fnSetShowMore] = useState(false);
   return (
     <main id="about-section" className="flex-row center section-card">
-      <div className="flex-column center">
+      <div className="flex-column center avatar-container">
         <img src={AboutImage} className="avatar-img" alt="Jacob Mayeux" />
       </div>
       <div className="flex-column center">
         <div className="flex-column center">
-          <p className="text">{sGreeting}</p>
+          <p className="greeting-text">{sGreeting}</p>
           <h2 className="title-text">{sTitle}</h2>
         </div>
         <div className="flex-column center">
-          <p className="text">
+          <p>
             {sContext}
             {bShowMore ? null : (
-              <a
-                href="#"
+              <button
                 onClick={() => fnSetShowMore(true)}
-                className="more-context-link"
+                className="more-context-btn"
               >
                 ..more
-              </a>
+              </button>
             )}
           </p>
           {bShowMore ? (
             <p className="text more-context">
               {sMoreContext}
-              <a
-                href="#"
+              <button
                 onClick={() => fnSetShowMore(false)}
-                className="more-context-link"
+                className="more-context-btn"
               >
                 ..less
-              </a>
+              </button>
             </p>
           ) : null}
         </div>
-        <div class="flex-row center">
+        <div className="flex-row center">
           <button
             className="btn"
             onClick={() => {
