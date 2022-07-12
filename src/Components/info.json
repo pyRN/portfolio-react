@@ -1,0 +1,41 @@
+{
+  "oNavbar": {
+    "aNavbarLinks": ["About", "Resume", "Projects", "Contact"]
+  },
+  "oAbout": {
+    "sGreeting": "Greetings! I'm",
+    "sTitle": "Jacob Mayeux",
+    "sContext": "I am a registered nurse turned software developer with experience working in high stress, fast paced environments.  I have been on multiple projects within the energy sector, building custom web applications for large corporations.",
+    "sMoreContext": "From 2018-2020, I worked on different projects in various roles at IBM: GBS North America. My official role was \"SAP Technical Specialist;\" however, this role had many hats. I created custom web applications using SAP's UI5 framework that were integrated into their Fiori dashboard. I worked an assistant system administrator to configure new SAP servers for Fiori use and added users with roles onto those servers. I worked as a technical consultant for Fiori, where I troubleshooted system errors, deployed new applications to the dashboard, and worked with backend/security professionals to get applications working properly. I often worked remotely with a global team, but I occasionally traveled to client sites to do on-site work. I consulted on web applications with project owners, business leads, and UX designers to increase app efficiency and provide a better UX for the end user. \n\nI made the decision to return to nursing temporarily in July 2020 due to the COVID-19 pandemic, where I felt I was of more immediate use to my community. Being a registered nurse in the emergency room for 8 years has given me many skills to succeed as a software developer. I excel in time management, critical thinking in stressful situations, the ability to communicate both with a team and across disciplines, attention to details, and problem solving",
+    "sButtonText": "Resume"
+  },
+  "oProjects": {
+    "sTitle": "Projects",
+    "aProjects": [
+      {
+        "sProjectTitle": "Do I Have That Card",
+        "sDescription": "A light weight web application, designed to save a collection of Magic: The Gathering cards and assess if you own a specific card.  This is built using React for frontent, Redux for state management and Google Firebase/Firestore for API calls.",
+        "sProjectImg": "doihavethatcard.png",
+        "aIcons": ["SiReact", "SiRedux", "SiJavascript", "SiHtml5", "SiCss3"],
+        "sUrl": "http://www.doihavethatcard.com"
+      },
+      {
+        "sProjectTitle": "Not Really Bros",
+        "sDescription": "Landing page for web development buisiness.  Created with React",
+        "sProjectImg": "notreallybros.png",
+        "aIcons": ["SiReact", "SiJavascript", "SiHtml5", "SiCss3"],
+        "sUrl": "https://notreallybros.com"
+      },
+      {
+        "sProjectTitle": "Killin' Keto",
+        "sDescription": "Landing page for a meal prep buisiness.  Created with React",
+        "sProjectImg": "killinketo.png",
+        "aIcons": ["SiReact", "SiJavascript", "SiHtml5", "SiCss3"],
+        "sUrl": "https://stunning-cactus-95ba38.netlify.app/"
+      }
+    ]
+  },
+  "oContact": {
+    "sTitle": "Contact Me"
+  }
+}
