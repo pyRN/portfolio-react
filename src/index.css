@@ -1,6 +1,6 @@
 :root {
   --background-color: #f3f3f3;
-  --blue: hsl(214, 72%, 54%);
+  --blue: #1d7fff;
   --text: #444;
   --gray: #ddd;
   --white: #fff;
@@ -14,4 +14,235 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.center {
+  justify-self: center;
+  align-items: center;
+}
+
+.section-card {
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  border-left: 2px solid var(--blue);
+  border-right: 2px solid var(--blue);
+  margin: 1% 5% 5% 5%;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.section-heading {
+  color: var(--blue);
+  font-size: max(5vw, 2rem);
+  margin-bottom: 0;
+}
+
+.avatar-container {
+  max-width: 500px;
+}
+
+.avatar-img {
+  border-top: 2px solid var(--blue);
+  border-bottom: 2px solid var(--blue);
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  padding: 2px;
+}
+
+.title-text {
+  color: var(--blue);
+  font-size: max(5vw, 2rem);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 10px;
+}
+
+.greeting-text {
+  padding: 10px 0 0 0;
+  text-align: start;
+}
+
+.more-context {
+  white-space: pre-line;
+  vertical-align: bottom;
+}
+
+.more-context-btn {
+  color: var(--blue);
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  font-size: 12pt;
+}
+
+.btn {
+  margin: 10px 0;
+  background-color: var(--blue);
+  width: 150px;
+  height: 55px;
+  border: 1px solid var(--white);
+  border-radius: 8px;
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.btn:hover {
+  border: 1px solid var(--blue);
+  background-color: var(--white);
+  color: var(--blue);
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.project-card {
+  border-radius: 8px;
+  border-top: 2px solid var(--blue);
+  border-bottom: 2px solid var(--blue);
+  margin: 5%;
+  padding: 20px;
+  height: auto;
+  min-height: 40vh;
+  width: 80%;
+}
+
+.project-header {
+  margin: 0;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-left: 2px solid var(--blue);
+  border-right: 2px solid var(--blue);
+  border-radius: 8px;
+  padding: 0 2px;
+}
+
+.project-url {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+.project-url:visited {
+  color: var(--blue);
+}
+
+.project-text {
+  color: var(--blue);
+  font-size: max(1vw, 1rem);
+  text-align: center;
+}
+
+.portfolio-site {
+  justify-content: space-around;
+  align-items: center;
+}
+.tech-stack {
+  max-height: 50px;
+}
+.tech-icon {
+  max-width: 100%;
+  width: 30px;
+  height: auto;
+  fill: var(--blue);
+}
+
+.contact-link {
+  border-top: 2px solid var(--blue);
+  border-bottom: 2px solid var(--blue);
+  border-radius: 8px;
+  margin: 5%;
+  padding: 5%;
+}
+
+.contact-svg {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  fill: var(--blue);
+  stroke: var(--white);
+}
+.svg-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  border-radius: 8px;
+}
+.contact-svg:hover {
+  transform: scale(0.8);
+  transition: transform 0.1s ease;
+}
+
+.img-container {
+  position: relative;
+  text-align: center;
+}
+
+.contact-img {
+  filter: grayscale(80%);
+}
+
+.footer {
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
+  margin: 5px;
+  position: sticky;
+  bottom: 0;
+  transition: visibility 0.5s, opacity 0.5s linear;
+}
+
+.footer-icon {
+  max-width: 100%;
+  width: 80px;
+  height: auto;
+  fill: var(--blue);
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .section-card {
+    flex-direction: column;
+  }
+
+  .project-card {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .footer {
+    visibility: visible;
+  }
 }

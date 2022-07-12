@@ -1,16 +1,18 @@
 //Components
-import AboutContainer from "./Components/AboutContainer";
-import ContactContainer from "./Components/ContactContainer";
+import AboutContainer from "./Components/About/AboutContainer";
+import ContactContainer from "./Components/Contact/ContactContainer";
+import Footer from "./Components/Footer/Footer";
 import Navbar from "./Components/Navbar/Navbar";
 import ProjectsContainer from "./Components/Projects/ProjectsContainer";
 
 const App = () => {
   return (
-    <div className="App">
+    <div>
       <Navbar />
       <AboutContainer />
       <ProjectsContainer />
       <ContactContainer />
+      <Footer />
     </div>
   );
 };
