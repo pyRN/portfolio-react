@@ -6,7 +6,7 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdOutlineEmail } from "react-icons/md";
 
 //Images
-import ContactImage from "./Images/ContactImage.jpg";
+import ContactImage from "./Images/ContactImage.webp";
 
 const ContactContainer = () => {
   const { sTitle } = oInfo.oContact;

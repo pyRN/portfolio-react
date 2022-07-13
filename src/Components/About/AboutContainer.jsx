@@ -1,7 +1,7 @@
 import { useState } from "react";
 import oInfo from "../info.json";
 //Images
-import AboutImage from "./Images/AboutImage.jpg";
+import AboutImage from "./Images/AboutImage.webp";
 
 //Documents
 import Resume from "../Documents/Jacob_Mayeux_Resume_6_2022.pdf";

@@ -15,21 +15,21 @@
       {
         "sProjectTitle": "Do I Have That Card",
         "sDescription": "A light weight web application, designed to save a collection of Magic: The Gathering cards and assess if you own a specific card.  This is built using React for frontent, Redux for state management and Google Firebase/Firestore for API calls.",
-        "sProjectImg": "doihavethatcard.png",
+        "sProjectImg": "doihavethatcard.webp",
         "aIcons": ["SiReact", "SiRedux", "SiJavascript", "SiHtml5", "SiCss3"],
         "sUrl": "http://www.doihavethatcard.com"
       },
       {
         "sProjectTitle": "Not Really Bros",
         "sDescription": "Landing page for web development buisiness.  Created with React",
-        "sProjectImg": "notreallybros.png",
+        "sProjectImg": "notreallybros.webp",
         "aIcons": ["SiReact", "SiJavascript", "SiHtml5", "SiCss3"],
         "sUrl": "https://notreallybros.com"
       },
       {
         "sProjectTitle": "Killin' Keto",
         "sDescription": "Landing page for a meal prep buisiness.  Created with React",
-        "sProjectImg": "killinketo.png",
+        "sProjectImg": "killinketo.webp",
         "aIcons": ["SiReact", "SiJavascript", "SiHtml5", "SiCss3"],
         "sUrl": "https://stunning-cactus-95ba38.netlify.app/"
       }
