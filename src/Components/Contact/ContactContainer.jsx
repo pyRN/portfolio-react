@@ -6,7 +6,8 @@ import { SiGithub, SiLinkedin } from "react-icons/si";
 import { MdOutlineEmail } from "react-icons/md";
 
 //Images
-import ContactImage from "./Images/ContactImage.webp";
+import ContactImageLarge from "./Images/contact_image_500x666.webp";
+import ContactImageSmall from "./Images/contact_image_310x412.webp";
 
 const ContactContainer = () => {
   const { sTitle } = oInfo.oContact;
@@ -16,7 +17,9 @@ const ContactContainer = () => {
       <div className="flex-row">
         <div className="flex-column center avatar-container img-container">
           <img
-            src={ContactImage}
+            src={ContactImageLarge}
+            srcSet={`${ContactImageSmall} 350w, ${ContactImageLarge} 500w`}
+            sizes="(max-width: 500px) 350px, 500px"
             className="avatar-img contact-img"
             alt="Contact Jacob"
           />
