@@ -15,21 +15,27 @@
       {
         "sProjectTitle": "Do I Have That Card",
         "sDescription": "A light weight web application, designed to save a collection of Magic: The Gathering cards and assess if you own a specific card.  This is built using React for frontent, Redux for state management and Google Firebase/Firestore for API calls.",
-        "sProjectImg": "doihavethatcard.webp",
+        "sProjectImgSmall": "doihavethatcard_300x153.webp",
+        "sProjectImgMedium": "doihavethatcard_630x322.webp",
+        "sProjectImgLarge": "doihavethatcard_1100x563.webp",
         "aIcons": ["SiReact", "SiRedux", "SiJavascript", "SiHtml5", "SiCss3"],
         "sUrl": "http://www.doihavethatcard.com"
       },
       {
         "sProjectTitle": "Not Really Bros",
         "sDescription": "Landing page for web development buisiness.  Created with React",
-        "sProjectImg": "notreallybros.webp",
+        "sProjectImgSmall": "notreallybros_300x151.webp",
+        "sProjectImgMedium": "notreallybros_630x318.webp",
+        "sProjectImgLarge": "notreallybros_1100x556.webp",
         "aIcons": ["SiReact", "SiJavascript", "SiHtml5", "SiCss3"],
         "sUrl": "https://notreallybros.com"
       },
       {
         "sProjectTitle": "Killin' Keto",
         "sDescription": "Landing page for a meal prep buisiness.  Created with React",
-        "sProjectImg": "killinketo.webp",
+        "sProjectImgSmall": "killinketo_300x152.webp",
+        "sProjectImgMedium": "killinketo_630x321.webp",
+        "sProjectImgLarge": "killinketo_1100x561.webp",
         "aIcons": ["SiReact", "SiJavascript", "SiHtml5", "SiCss3"],
         "sUrl": "https://stunning-cactus-95ba38.netlify.app/"
       }
