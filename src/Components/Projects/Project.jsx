@@ -15,9 +15,13 @@ const Project = ({ oProject, aIcons }) => {
       <p className="project-text">{oProject.sDescription}</p>
       <a href={oProject.sUrl} target="_blank" rel="noreferrer">
         <img
-          src={require(`./Images/${oProject.sProjectImg}`)}
+          src={require(`./Images/${oProject.sProjectImgLarge}`)}
+          srcSet={`${require(`./Images/${oProject.sProjectImgSmall}`)} 350w, ${require(`./Images/${oProject.sProjectImgMedium}`)} 750w`}
+          sizes="(max-width: 800px) 350px, 750px"
           alt="Food Template Site"
           className="project-img"
+          width="1100px"
+          height="600px"
         />
       </a>
       <div className="flex-row center tech-stack">
