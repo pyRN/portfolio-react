@@ -18,8 +18,9 @@ const AboutContainer = () => {
           src={AboutImageLarge}
           className="avatar-img"
           alt="Jacob Mayeux"
-          srcSet={`${AboutImageSmall} 350w, ${AboutImageLarge} 500w`}
-          sizes="(max-width: 500px) 350px, 500px"
+          srcSet={`${AboutImageSmall} 400w, ${AboutImageLarge} 750w`}
+          height="700px"
+          width="350px"
         />
       </div>
       <div className="flex-column center">

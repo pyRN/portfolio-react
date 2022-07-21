@@ -19,9 +19,10 @@ const ContactContainer = () => {
           <img
             src={ContactImageLarge}
             srcSet={`${ContactImageSmall} 350w, ${ContactImageLarge} 500w`}
-            sizes="(max-width: 500px) 350px, 500px"
             className="avatar-img contact-img"
             alt="Contact Jacob"
+            height="700px"
+            width="350px"
           />
           <div className="flex-column flex-wrap svg-container">
             <div className="flex-row center">

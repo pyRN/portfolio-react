@@ -1,6 +1,6 @@
 :root {
   --background-color: #f3f3f3;
-  --blue: #1476f6;
+  --blue: #0046e2;
   --text: #444;
   --gray: #ddd;
   --white: #fff;
@@ -49,7 +49,7 @@ body {
 .section-heading {
   color: var(--blue);
   font-size: max(5vw, 2rem);
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .avatar-container {
@@ -245,5 +245,13 @@ p {
 @media only screen and (max-width: 750px) {
   .footer {
     visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .avatar-img {
+    min-width: none;
+    height: auto;
+    width: auto;
   }
 }
