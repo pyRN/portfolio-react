@@ -1,7 +1,8 @@
 import { useState } from "react";
 import oInfo from "../info.json";
 //Images
-import AboutImage from "./Images/AboutImage.webp";
+import AboutImageLarge from "./Images/about_image_500x666.webp";
+import AboutImageSmall from "./Images/about_image_310x412.webp";
 
 //Documents
 import Resume from "../Documents/Jacob_Mayeux_Resume_6_2022.pdf";
@@ -13,7 +14,13 @@ const AboutContainer = () => {
   return (
     <main id="about-section" className="flex-row center section-card">
       <div className="flex-column center avatar-container">
-        <img src={AboutImage} className="avatar-img" alt="Jacob Mayeux" />
+        <img
+          src={AboutImageLarge}
+          className="avatar-img"
+          alt="Jacob Mayeux"
+          srcSet={`${AboutImageSmall} 350w, ${AboutImageLarge} 500w`}
+          sizes="(max-width: 500px) 350px, 500px"
+        />
       </div>
       <div className="flex-column center">
         <div className="flex-column center">
